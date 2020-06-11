@@ -2,7 +2,7 @@ from flask import render_template, url_for, flash, request, redirect, Blueprint
 from flask_login import current_user, login_required
 from companyblog import db
 from companyblog.models import BlogPost
-from companyblog.blog_posts.forms import BlogPostForms
+from companyblog.blog_posts.forms import BlogPostForm
 
 blog_posts = Blueprint('blog_posts', __name__)
 
@@ -58,7 +58,8 @@ def update(blog_post_id):
         blog_post.text = form.text.data
         db.session.commit()
         flash('Blog Post Updated')
-        return redirect(url_for('blog_posts.blog_post', blog_post_id=blog_post.id))
+        return redirect(url_for('blog_posts.blog_post',
+                                blog_post_id=blog_post.id))
 
     elif request.method == 'GET':
         form.title.data = blog_post.title

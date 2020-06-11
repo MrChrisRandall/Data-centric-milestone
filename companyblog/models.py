@@ -1,7 +1,7 @@
 from companyblog import db, login_manager
+from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
-from datetime import datetime
 
 
 @login_manager.user_loader
@@ -45,7 +45,7 @@ class BlogPost(db.model):
     title = db.Column(db.String(140), nullable=False)
     text = db.Column(db.Text, nullable=False)
 
-    def __init__(self, tite, text, user_id):
+    def __init__(self, title, text, user_id):
         self.title = title
         self.text = text
         self.user_id = user_id
