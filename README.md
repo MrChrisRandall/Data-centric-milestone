@@ -1,39 +1,72 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+PROJECT NAME
 
-Welcome MrChrisRandall,
+"Company Blog" by Christopher Randall
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+In this project I wanted to create a website dedicated to blogging, specifically a workplace/lifestyle blog for company employees. Unfortunately I may have given myself to much to do and it is not running as intended. I went
+with SQL Alchemy in this project instead of MongoDB as I wanted to try stand out from the crowd a bit but I ended up being disappointed in myself as I gave set the bar
+to high and that may ultimately be my downfall in this milestone project. I hope that maybe the code that has been displayed here can show what I was going for and the
+ambition that I had going into this project.
 
-## Gitpod Reminders
+UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This website is  dedicated solely to a companies blog post site for employees to go and blog about their day or an aspect of work that week or even to keep
+people who may know or follow said person up to date with the working life/lifestyle.
 
-`python3 -m http.server`
+FEATURES
 
-A blue button should appear to click: *Make Public*,
+This website features a registration aspect, login aspect, creation of blog post along with readability, update feature adn delete feature. It also made sure
+that to edit a blog post the inital user who created the post must be logged in as to prevent any random user from editing any post they see fit. The main page of the
+site would showcase blogs written by different user which included the date and time in which it was posted along with a link to the users page. A custom 404 Error page and
+also a custom 403 Forbidden Access page were also to be implemented but unfortunately they were not completed.
 
-Another blue button should appear to click: *Open Browser*.
+TECHNOLOGIES USED
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Technologies used were as follows:
 
-A blue button should appear to click: *Make Public*,
+- HTML5 to build the site.
 
-Another blue button should appear to click: *Open Browser*.
+- CSS to style the site.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+- JavaScript was to be used but unfortunately was not implemented in time.
 
-## Updates Since The Instructional Video
+- Python + Flask was used to build the backend and add almost all of the features seen here.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+- SQL Alchemy was the database I chose to go with.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+My automated tests for this project are as follows:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Initially running the app with success using the terminal.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- Testing the forms and also that the blog posts were infact posting correctly.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Testing that the registration of multiple accounts with the same email address would throw an error.
 
---------
+- Testing that only the blog post creator could edit the posts.
 
-Happy coding!
+My steps to deploying my project were as follows:
+
+- I first created a new repository on GitHub.
+
+- Next I changed my Source to Masterbranch in the repository settings.
+
+- Next I opened my new repository in GitPod.
+
+- Running the app came in hte form of teh terminal window.
+
+- Once satisfied with the days progress I would commmit my code.
+
+- Then I would pushed my code from GitPod to the repository.
+
+CREDITS
+
+Content:
+
+Any written content came from myself.
+
+Media:
+
+N/A
+
+Acknowledgements:
+
+I acknowledge that I took inspiration from browsing website templates and popular builds on such sites as Squarespace & Theme Forest.
